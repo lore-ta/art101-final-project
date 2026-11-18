@@ -1,12 +1,47 @@
-let messagesA = [
+$("#awake").click( function(){
+  
+   $("#wakeUp").show();
+   $("#home").hide();
 
-]; 
 
-let information = {
-    scene1: "It's another rainy day at UCSC, you wake up earlier than your alarm and can’t fall back asleep even though you're tired. You only got 3 hours of sleep because you were up all night studying for your midterm today. Are you ready for the day?"
-};
+});
 
-$("#awake").click(function () {
-    let message = information.scene1;
-    $("#answer").html(message);
+
+$("#yes").click( function(){
+
+
+   $("#yesResult").show();
+   $("#wakeUp").hide();
+
+
+});
+
+
+$("#no").click( function(){
+
+
+   $("#noResult").show();
+   $("#wakeUp").hide();
+
+
+});
+
+
+$("#fine").click( function(){
+
+
+   $("#noResult").hide();
+   $("#getReady").show();
+
+
+});
+
+
+$("#go").click( function(){
+
+
+   $("#yesResult").hide();
+   $("#getReady").show();
+
+
 });

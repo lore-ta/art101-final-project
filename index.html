@@ -1,29 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Evil Slugs </title>
-   <link rel="stylesheet" href="index.css">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Evil Slugs </title>
+ <link rel="stylesheet" href="index.css">
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="index.js" DEFER></script>
+
+
 </head>
+
+
 <body>
-  <h1>A Series of Unfortunate Events at UCSC</h1>
-  <script src="index.js"></script>
+   <div id="home" class="screen">
+       <h1>A Series of Unfortunate Events at UCSC</h1>
+       <button id="awake">wake up</button>
+   </div>
+
+
+   <div id="wakeUp" class="screen">
+       <p>It’s another rainy day at UCSC, you wake up earlier than your alarm
+           and can’t fall back asleep even though you're tired. You were up all night studying for your
+            midterm today.
+       </p>
+
+
+       <h2>Are you ready for the day?</h2>
+       <p>You only got three hours of sleep. zzzzzz....</p>
+
+
+       <button id="yes">yes....?</button>
+       <button id="no">NO. </button>
+   </div>
+
+
+   <div id="yesResult" class="screen">
+       <h1>A confident zombie.</h1>
+       <p>You look in the mirror. You look like a zombie, but you tell yourself, "I got this." You definitely don't got this.</p>
+       <button id="go">Let's Go!</button>
+
+
+   </div>
+
+
+
+
+   <div id="noResult" class="screen">
+       <h1>Do I really have to...?</h1>
+       <p>You stare at your bed for a few seconds. You want to go back to sleep, but your midterm isn't going to take itself. Unfortunately.</p>
+       <button id="fine">Fine, I'll get up.</button>
+
+
+   </div>
+
+
+
+
+   <div id="getReady" class="screen">
+   <p>
+       You get up and get ready because you have to walk
+       20 minutes to your bus (Front St) as well as living
+       in another city because Santa Cruz has a housing crisis.
+       It never gets easier, only more exhausting.
+       “Anything for affordable housing”, you think to yourself
+       as you leave your apartment to catch the bus.
+   </p>
+
+
+   <button id="leaveApartment">Leave</button>
+   </div>
+
+
+
+
+
+
+
+
+
+
+   <div id="busStop" class="screen"></div>
+
+
+
+
+   <div id="bus" class="screen"></div>
+
+
+
+
+   <div id="oakes" class="screen"></div>
+
+
+
+
+   <div id="again" class="screen"></div>
+
+
+
+
+   <div id="classroom" class="screen"></div>
+
+
+   <div id="empty" class="screen"></div>
+
+
+
+
+   <div id="finalA" class="screen"></div>
+
+
+
+
+   <div id="finalB" class="screen"></div>
+
+
 </body>
-<div id="story-popup">
-     <button id="awake">Wake up</button>
-     <div id="answer">
-<div id="s-1" style ="display: none; ">
-    <p id="scene1"> It’s another rainy day at UCSC, you wake up earlier than your alarm and can’t fall back asleep even though you're tired. You only got 3 hours of sleep because you were up all night studying for your midterm today. Are you ready for the day? 
- </p>
-
-    <div id="choice-buttons"></div>
-    <button id="NO">NO</button>
-     <button id="yes">yes...?</button>
-</div> 
-</div> 
-
-<div id=chat-1></div> 
- <script src="https://jquery.com"></script> 
-
-
 </html>
+
+
